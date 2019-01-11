@@ -1,6 +1,9 @@
 @import "../../node_modules/node-normalize-scss/normalize";
 
-@import "./mixins.scss";
 @import "./fonts.scss";
 @import "./variables.scss";
+@import "./mixins.scss";
 @import "./base.scss";
+@import "./blocks/main-content.scss";
+@import "./blocks/nav-view.scss";
+@import "./blocks/title-wrap.scss";

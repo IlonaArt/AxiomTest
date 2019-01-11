@@ -1,0 +1,18 @@
+.title-wrap {
+    height: 64px;
+    align-self: flex-start;
+    flex-grow: 1;
+    padding: 24px 41px 24px 26px;
+    background-color: #2196f3;
+    .menu-wrap {
+        display: flex;
+    }
+    .menu-image {
+        margin-right: 27px;
+    }
+    .title-text {
+        font-size: 1.313em;
+        line-height: 16px;
+        color: #ffffff;
+    }
+}

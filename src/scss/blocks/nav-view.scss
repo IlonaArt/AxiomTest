@@ -1,0 +1,56 @@
+.nav-view {
+    max-width: 257px;
+    height: 900px;
+    .toolbar-image {
+        display: block;
+    }
+    .main-nav {
+        height: 100%;
+        background-color: #ffffff; 
+    }
+    .nav-list-divided {
+        @include ul-style(21px 0 0 0);
+        border-bottom: 1px solid #d6d5d5;
+        .nav-item {
+            padding-left: 25px;
+            &.recent,
+            &.archive {
+                margin-bottom: 30px;
+            }
+            &.replied {
+                margin-bottom: 22px;
+    
+            }
+        }
+    }
+    .nav-list {
+        @include ul-style($padding: 21px 21px 0 25px);
+        .nav-item {
+            margin-bottom: 29px;
+        }
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &:hover {
+            .options {
+                color: #b1afaf;
+            }
+        }
+        &:focus {
+            .options {
+                color: #2196f3;
+            }
+        }
+        .nav-image {
+            margin-right: 33px;
+        }
+    }
+    .options {
+        font-size: 0.938em;
+        &.active {
+            color: #2196f3;
+        }
+    }
+}

@@ -15,7 +15,11 @@
 }
 
 body {
-  
+  font-family: "Roboto", san-serif;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #eeeeee;
+  color: #4d4d4e;
 }
 
 * {
@@ -24,4 +28,18 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+}
+
+%borderless-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #4d4d4e;
 }
