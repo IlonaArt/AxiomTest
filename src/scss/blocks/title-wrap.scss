@@ -1,18 +1,31 @@
 .title-wrap {
+    display: flex;
     height: 64px;
     align-self: flex-start;
-    flex-grow: 1;
     padding: 24px 41px 24px 26px;
     background-color: #2196f3;
     .menu-wrap {
         display: flex;
+        align-items: center;
     }
-    .menu-image {
+    .menu-button {
+        @extend %borderless-btn;
         margin-right: 27px;
     }
     .title-text {
         font-size: 1.313em;
-        line-height: 16px;
+        line-height: 15px;
         color: #ffffff;
+    }
+    .refresh-wrap {
+        align-self: center;
+        margin-left: auto;
+    }
+    .refresh-button {
+        @extend %borderless-btn;
+        margin-right: 46px;
+    }
+    .more-button {
+        @extend %borderless-btn;
     }
 }

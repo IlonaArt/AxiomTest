@@ -38,7 +38,8 @@
                 color: #b1afaf;
             }
         }
-        &:focus {
+        &:focus,
+        &:active {
             .options {
                 color: #2196f3;
             }

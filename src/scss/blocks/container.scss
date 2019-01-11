@@ -1,0 +1,203 @@
+.container {
+    display: flex;
+    padding: 20px 17px 20px 66px;
+    .contacts-wrap {
+        flex-grow: 1;
+        margin-right: 14px;
+        padding-left: 81px;
+        padding-top: 23px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 
+        0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    }
+    .favorites-list {
+        @include ul-style($padding: 0 0 20px 0);
+    }
+    .a-list {
+        @include ul-style($padding: 20px 0 20px 0); 
+        .contacts-item {
+            &.letter-a {
+                position: relative;
+            }
+        }
+    }
+    .b-list {
+        @include ul-style($padding: 20px 0 0 0); 
+        .contacts-item {
+            &.letter-b {
+                position: relative;
+            }
+        }
+    }
+    .favorites-list,
+    .a-list {
+        border-bottom: 1px solid #d6d5d5;
+    }
+    .decorative {
+        position: absolute;
+        font-size: 1.500em;
+        left: -56px;
+        bottom: 12px;
+        color: #ff3e81;
+    }
+    .contacts-item {
+        display: flex;
+        align-items: center;
+        &.favorites {
+            position: relative;
+            .red-star {    
+                position: absolute;
+                left: -56px;
+                top: 8px;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+    .contacts-link {
+        display: flex;
+        align-items: center;
+        &:hover {
+            .contacts-text {
+                color: #b1afaf;
+            }
+        }
+        &:focus,
+        &:active {
+            .contacts-text {
+                color: #2196f3;
+            }
+        }
+    }
+    .contacts-image {
+        margin-right: 15px;
+    }
+    .contacts-text {
+        font-size: 0.938em;
+        &.active {
+            color: #2196f3;
+        }
+    }
+
+    .contacts-details {
+        height: 776px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 
+        0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    }
+    .image-wrap {
+        position: relative;
+        img {
+            display: block;
+        }
+    }
+    .btn-back {
+        position: absolute;
+        width: 16px;
+        left: 25px;
+        height: 16px;
+        top: 25px;
+    }
+    .btn-edit {
+        @extend %borderless-btn;
+        position: absolute;
+        top: 25px;
+        right: 64px; 
+    }
+    .btn-more {
+        @extend %borderless-btn;
+        position: absolute;
+        top: 25px;
+        right: 27px;
+    }
+    .image-text {
+        position: absolute;
+        left: 26px;
+        bottom: 18px;
+        font-size: 2.2em;
+        line-height: 28px;
+        color: #ffffff;
+    }
+
+    .info-wrap {
+        padding-top: 41px;
+        padding-left: 84px;
+    }    
+    .phone-list {
+        @include ul-style($padding: 0 0 23px 0);
+        border-bottom: 1px solid #d6d5d5;
+        .phone-item {
+            background-image: url("../img/hangout.svg");
+            background-repeat: no-repeat;
+            background-position: 94% 50%;
+        }
+    }
+    .phone-item {
+        position: relative;
+        padding-right: 22px;
+        &.call {
+            margin-bottom: 32px;
+        }
+    }
+    .phone-button {
+        @extend %borderless-btn;
+        position: absolute;
+        left: -52px;
+        top: 9px;
+        height: 18px;
+    }
+    .info-link {
+        &:hover {
+            .info-text {
+                color: #2196f3;
+            }
+        }
+    }
+    .info-text {
+        line-height: 22px;
+    }
+    .description-text {
+        font-size: 0.813em;
+        line-height: 18px;
+        color: #999999;
+    }
+    .address-list {
+        @include ul-style($padding: 23px 0 20px 0);
+    }
+    .address-item {
+        position: relative;
+        &.post {
+            margin-bottom: 31px;
+        }
+        &.post-work {
+            margin-bottom: 41px;
+        }
+        &.home {
+            margin-bottom: 25px;
+        }
+    }
+    .address-link {
+        &:hover {
+            .info-text {
+                color: #2196f3;
+            }
+        }
+    }
+    .btn-email {
+        @extend %borderless-btn;
+        position: absolute;
+        height: 16px;
+        left: -52px;
+        top: 12px;
+    }
+    .btn-pin {
+        @extend %borderless-btn;
+        position: absolute;
+        height: 20px;
+        left: -52px;
+        top: 12px;
+    }
+}
