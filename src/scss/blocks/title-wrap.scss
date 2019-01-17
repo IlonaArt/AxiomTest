@@ -1,7 +1,6 @@
 .title-wrap {
     display: flex;
     height: 64px;
-    align-self: flex-start;
     padding: 24px 41px 24px 26px;
     background-color: #2196f3;
     .menu-wrap {
@@ -23,9 +22,6 @@
     }
     .refresh-button {
         @extend %borderless-btn;
-        margin-right: 46px;
-    }
-    .more-button {
-        @extend %borderless-btn;
+        margin-right: 26px;
     }
 }

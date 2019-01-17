@@ -10,33 +10,39 @@
  <main class="main-content">
   <section class="nav-view">
     <h1 class="visually-hidden">Main-navigation</h1>  
-    <div class="toolbar-wrap">
-      <img src="./build/img/toolbar@3x.jpg" class="toolbar-image" width="257" height="160" alt="toolbar-image">
+    <div class="account-wrap">
+      <img src="./build/img/toolbar@3x.jpg" class="account-image" width="257" height="160" alt="toolbar-image">
     </div>
     <nav class="main-nav">
       <ul class="nav-list-divided">
         <li class="nav-item recent">
           <a href="#" class="nav-link">
+            <div class="nav-img-wrap">
               <svg width="20" height="20" data-prefix="far" data-icon="clock" class="nav-image" role="img"
-               aria-label="clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#7d7d7d"
+              aria-label="clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#7d7d7d"
                 d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z">
               </path></svg>
+            </div>
             <p class="options active">Recent Contacts</p>
           </a>
         </li>
         <li class="nav-item archive">
           <a href="#" class="nav-link">
-            <svg aria-label="archive" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="18" height="18" viewBox="0 0 18 18" role="img">
-              <path fill="#7D7D7D" fill-rule="evenodd" d="M17.5 2.2L16.1.5C15.9.2 15.5 0 15 0H3c-.5 0-.9.2-1.2.5L.5 2.2C.2 2.6 0 3 0 3.5V16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V3.5c0-.5-.2-.9-.5-1.3zM9 14.5L3.5 9H7V7h4v2h3.5L9 14.5zM2.1 2l.8-1h12l.9 1H2.1z"/>
-            </svg>
+            <div class="nav-img-wrap">
+              <svg aria-label="archive" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="18" height="18" viewBox="0 0 18 18" role="img">
+                <path fill="#7D7D7D" fill-rule="evenodd" d="M17.5 2.2L16.1.5C15.9.2 15.5 0 15 0H3c-.5 0-.9.2-1.2.5L.5 2.2C.2 2.6 0 3 0 3.5V16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V3.5c0-.5-.2-.9-.5-1.3zM9 14.5L3.5 9H7V7h4v2h3.5L9 14.5zM2.1 2l.8-1h12l.9 1H2.1z"/>
+              </svg>
+            </div>
             <p class="options">Archive</p>
           </a>
         </li>
         <li class="nav-item replied">
           <a href="#" class="nav-link">
-            <svg aria-label="done" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="18" height="14" viewBox="0 0 18 14" role="img">
-              <path fill="#7D7D7D" fill-rule="evenodd" d="M6 11.2L1.8 7 .4 8.4 6 14 18 2 16.6.6z"/>
-            </svg>
+            <div class="nav-img-wrap">
+              <svg aria-label="done" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="18" height="14" viewBox="0 0 18 14" role="img">
+                <path fill="#7D7D7D" fill-rule="evenodd" d="M6 11.2L1.8 7 .4 8.4 6 14 18 2 16.6.6z"/>
+              </svg>
+            </div>  
             <p class="options">Replied</p>
           </a>
         </li>
@@ -44,43 +50,53 @@
       <ul class="nav-list">
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <svg aria-label="sent" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="21" height="18" viewBox="0 0 21 18" role="img">
-              <path fill="#7D7D7D" fill-rule="evenodd" d="M0 18l21-9L0 0v7l15 2-15 2z"/>
-            </svg>            
+            <div class="nav-img-wrap">
+              <svg aria-label="sent" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="21" height="18" viewBox="0 0 21 18" role="img">
+                <path fill="#7D7D7D" fill-rule="evenodd" d="M0 18l21-9L0 0v7l15 2-15 2z"/>
+              </svg> 
+            </div>             
             <p class="options">Sent</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-              <svg width="14" height="18" data-prefix="fas" data-icon="trash" class="nav-image" role="img" 
-              aria-label="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#7d7d7d" 
-              d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm415.2 56.7L394.8 467c-1.6 25.3-22.6 45-47.9 45H101.1c-25.3 0-46.3-19.7-47.9-45L32.8 140.7c-.4-6.9 5.1-12.7 12-12.7h358.5c6.8 0 12.3 5.8 11.9 12.7z"></path></svg>
-            <p class="options">Trash</p>
+              <div class="nav-img-wrap">
+                <svg width="14" height="18" data-prefix="fas" data-icon="trash" class="nav-image" role="img" 
+                aria-label="delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#7d7d7d" 
+                d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm415.2 56.7L394.8 467c-1.6 25.3-22.6 45-47.9 45H101.1c-25.3 0-46.3-19.7-47.9-45L32.8 140.7c-.4-6.9 5.1-12.7 12-12.7h358.5c6.8 0 12.3 5.8 11.9 12.7z"></path></svg>
+              </div>  
+              <p class="options">Trash</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <svg aria-label="star" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="20" height="19" viewBox="0 0 20 19" role="img">
-              <path fill="#7D7D7D" fill-rule="evenodd" d="M10 15.273L16.18 19l-1.635-7.029L20 7.244l-7.191-.617L10 0 7.191 6.627 0 7.244l5.455 4.727L3.82 19z"/>
-            </svg>
+            <div class="nav-img-wrap">
+              <svg aria-label="star" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="20" height="19" viewBox="0 0 20 19" role="img">
+                <path fill="#7D7D7D" fill-rule="evenodd" d="M10 15.273L16.18 19l-1.635-7.029L20 7.244l-7.191-.617L10 0 7.191 6.627 0 7.244l5.455 4.727L3.82 19z"/>
+              </svg>
+            </div>
             <p class="options">Starred</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <svg aria-label="forum" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="20" height="20" viewBox="0 0 20 20" role="img">
-              <path fill="#7D7D7D" fill-rule="evenodd" d="M19 4h-2v9H4v2c0 .6.4 1 1 1h11l4 4V5c0-.6-.4-1-1-1zm-4 6V1c0-.6-.4-1-1-1H1C.4 0 0 .4 0 1v14l4-4h10c.6 0 1-.4 1-1z"/>
-            </svg>            
+            <div class="nav-img-wrap">
+              <svg aria-label="forum" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="20" height="20" viewBox="0 0 20 20" role="img">
+                <path fill="#7D7D7D" fill-rule="evenodd" d="M19 4h-2v9H4v2c0 .6.4 1 1 1h11l4 4V5c0-.6-.4-1-1-1zm-4 6V1c0-.6-.4-1-1-1H1C.4 0 0 .4 0 1v14l4-4h10c.6 0 1-.4 1-1z"/>
+              </svg>   
+            </div>           
             <p class="options">Forums</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
+            <div class="nav-img-wrap">
               <svg aria-label="flag" xmlns="http://www.w3.org/2000/svg" class="nav-image" width="14" height="16" viewBox="0 0 14 16" role="img">
                 <g fill="#7D7D7D" fill-rule="evenodd">
                     <path d="M0 0h2v16H0zM3 0h11v11H3z"/>
                 </g>
-            </svg>            
+              </svg>
+            </div>              
             <p class="options">Updates</p>
           </a>
         </li>
@@ -199,21 +215,25 @@
       <div class="contacts-details">
         <div class="image-wrap">
           <img src="./build/img/James Connors.png" width="432" height="246" alt="James Connors">
-          <a class="btn-back" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img">
-              <path fill="#FFF" fill-opacity=".87" fill-rule="evenodd" d="M16 7H3.8l5.6-5.6L8 0 0 8l8 8 1.4-1.4L3.8 9H16z"/>
-            </svg>
-          </a>
-          <button class="btn-edit" type="button" aria-label="edit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" role="img">
-              <path fill="#FFF" fill-opacity=".87" fill-rule="evenodd" d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2zM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4z"/>
-            </svg>
-          </button>
-          <button class="btn-more" type="button" aria-label="more">
-            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="16" viewBox="0 0 4 16" role="img">
-              <path fill="#FFF" fill-opacity=".87" fill-rule="evenodd" d="M2 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-            </svg>            
-          </button>
+          <div class="all-btns-wrap">
+            <a class="btn-back" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img">
+                <path fill="#FFF" fill-opacity=".87" fill-rule="evenodd" d="M16 7H3.8l5.6-5.6L8 0 0 8l8 8 1.4-1.4L3.8 9H16z"/>
+              </svg>
+            </a>
+            <div class="btn-wrap">
+              <button class="btn-edit" type="button" aria-label="edit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" role="img">
+                  <path fill="#FFF" fill-opacity=".87" fill-rule="evenodd" d="M0 14.2V18h3.8l11-11.1L11 3.1 0 14.2zM17.7 4c.4-.4.4-1 0-1.4L15.4.3c-.4-.4-1-.4-1.4 0l-1.8 1.8L16 5.9 17.7 4z"/>
+                </svg>
+              </button>
+              <button class="more-button" type="button" aria-label="more">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="16" viewBox="0 0 4 16" role="img">
+                  <path fill="#FFF" fill-opacity=".87" fill-rule="evenodd" d="M2 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                </svg>            
+              </button>
+            </div>
+          </div> 
           <p class="image-text">James Connors</p>
         </div>
         <div class="info-wrap">
@@ -225,15 +245,15 @@
                 </svg>
               </button>
               <a class="info-link" href="#">
-                <p class="info-text">(650) 555-1234</p>
+                <span class="info-text">(650) 555-1234</span>
               </a>
-              <p class="description-text">Mobile</p>
+              <span class="description-text">Mobile</span>
              </li>
              <li class="phone-item">
               <a class="info-link" href="#">
-                <p class="info-text">(323) 555-6789</p>
+                <span class="info-text">(323) 555-6789</span>
               </a>  
-              <p class="description-text">Work</p>
+              <span class="description-text">Work</span>
              </li> 
           </ul>
           <ul class="address-list">
@@ -244,14 +264,14 @@
                 </svg>
               </button>
               <a href="#" class="address-link">
-                <p class="info-text">aliconnors@example.com</p>
-                <p class="description-text">Personal</p>
+                <span class="info-text">aliconnors@example.com</span>
+                <span class="description-text">Personal</span>
               </a>
             </li>
             <li class="address-item post-work">
               <a href="#" class="address-link">
-                <p class="info-text">ali_connors@example.com</p>
-                <p class="description-text">Work</p>
+                <span class="info-text">ali_connors@example.com</span>
+                <span class="description-text">Work</span>
               </a>
             </li>
             <li class="address-item home">
@@ -261,14 +281,14 @@
                   </svg>
                   </button>
               <a href="#" class="address-link">
-                <p class="info-text">2000 SW 1st Ave<br> San Francisco, CA 94112</p>
-                <p class="description-text">Home</p>
+                <span class="info-text">2000 SW 1st Ave<br> San Francisco, CA 94112</span>
+                <span class="description-text">Home</span>
               </a>
             </li>
-            <li class="address-item">
+            <li class="address-item work">
               <a href="#" class="address-link">
-                <p class="info-text">1600 Amphitheatre Pkwy<br> Mountain View, CA 94043</p>
-                <p class="description-text">Work</p>
+                <span class="info-text">1600 Amphitheatre Pkwy<br> Mountain View, CA 94043</span>
+                <span class="description-text">Work</span>
               </a>
             </li>
           </ul>

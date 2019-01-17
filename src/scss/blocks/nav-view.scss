@@ -1,12 +1,17 @@
 .nav-view {
     max-width: 257px;
-    height: 900px;
-    .toolbar-image {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; 
+    .account-image {
         display: block;
     }
     .main-nav {
-        height: 100%;
-        background-color: #ffffff; 
+        overflow: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-height: 900px;  
     }
     .nav-list-divided {
         @include ul-style(21px 0 0 0);
@@ -44,9 +49,14 @@
                 color: #2196f3;
             }
         }
-        .nav-image {
-            margin-right: 33px;
-        }
+    }
+    .nav-img-wrap {
+        display: flex;
+        width: 30px;
+        margin-right: 25px;
+    }
+    .nav-image {
+        width: 100%;
     }
     .options {
         font-size: 0.938em;
