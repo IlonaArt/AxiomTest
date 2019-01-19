@@ -22,6 +22,12 @@ body {
   color: #4d4d4e;
 }
 
+body, 
+html, 
+.main-content {
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -11,13 +11,12 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        max-height: 900px;  
     }
     .nav-list-divided {
         @include ul-style(21px 0 0 0);
         border-bottom: 1px solid #d6d5d5;
         .nav-item {
-            padding-left: 25px;
+            padding-left: 23px;
             &.recent,
             &.archive {
                 margin-bottom: 30px;
@@ -29,7 +28,7 @@
         }
     }
     .nav-list {
-        @include ul-style($padding: 21px 21px 0 25px);
+        @include ul-style($padding: 21px 21px 0 23px);
         .nav-item {
             margin-bottom: 29px;
         }
@@ -52,8 +51,8 @@
     }
     .nav-img-wrap {
         display: flex;
-        width: 30px;
-        margin-right: 25px;
+        width: 21px;
+        margin-right: 34px;
     }
     .nav-image {
         width: 100%;

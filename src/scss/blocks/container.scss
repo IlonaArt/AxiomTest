@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    padding: 20px 17px 0 66px;
+    padding: 20px 17px 20px 66px;
     .contacts-wrap {
         flex-grow: 1;
         flex-basis: 367px;
@@ -9,43 +9,50 @@
         max-height: 830px;
         margin-right: 14px;
         padding-left: 81px;
-        padding-top: 23px;
-        padding-bottom: 23px;
         background-color: #ffffff;
         border-radius: 2px;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 
         0 2px 5px 0 rgba(0, 0, 0, 0.16);
     }
-    .favorites-list {
-        @include ul-style($padding: 0 0 20px 0);
-    }
-    .a-list {
-        @include ul-style($padding: 20px 0 20px 0); 
-        .contacts-item {
-            &.letter-a {
-                position: relative;
-            }
-        }
-    }
-    .b-list {
-        @include ul-style($padding: 20px 0 0 0); 
-        .contacts-item {
-            &.letter-b {
-                position: relative;
-            }
-        }
-    }
-    .favorites-list,
-    .a-list {
+    .contacts-list {
+        @include ul-style($padding: 23px 0 0 0);
+        position: relative;
         border-bottom: 1px solid #d6d5d5;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 30px;
+            left: -52px;
+        }
+        &.favorites {
+            &::before {
+                width: 20px;
+                height: 19px;
+                background-image: url("../img/star.svg");
+                background-repeat: no-repeat;
+            }
+        }
+        &.decorative {
+            &.list-a {
+                &::before {
+                    content: "A";
+                }
+            }
+            &.list-b {
+                &::before {
+                    content: "B";
+                }
+            }
+            &::before {
+                font-size: 1.500em;
+                color: #ff3e81;
+            }   
+        }
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
     }
-    .decorative {
-        position: absolute;
-        font-size: 1.500em;
-        left: -56px;
-        bottom: 12px;
-        color: #ff3e81;
-    }
+
     .contacts-item {
         display: flex;
         align-items: center;
@@ -87,7 +94,9 @@
     }
 
     .contacts-details {
+        position: relative;
         flex-basis: 432px;
+        height: 100%;
         background-color: #ffffff;
         border-radius: 2px;
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 
@@ -127,7 +136,6 @@
     }
 
     .info-wrap {
-        position: relative;
         overflow: auto;
         max-height: 830px;
         padding-top: 41px;
@@ -221,7 +229,7 @@
         display: flex;
         justify-content: center;
         right: 11px;
-        bottom: 2px;
+        bottom: -16px;
         width: 56px;
         height: 56px;
         border-radius: 50%;
